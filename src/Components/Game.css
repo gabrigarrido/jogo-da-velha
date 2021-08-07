@@ -1,0 +1,88 @@
+.content{
+    position: relative;
+    background-color:rgb(238, 238, 238);
+    border-radius: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    
+}
+
+
+
+
+.table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 60vh;
+    width: 40vw;
+    gap: 0.5rem;
+    margin: 0.5rem
+}
+
+.square{
+    display:grid;
+    justify-content: center;
+    background-color: #fa69b6;
+    color: rgba(0, 0, 0, 0.926);
+    font-style: oblique;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 5px;
+    align-items: center;
+}
+.square:hover{
+  background: #f0c8e0;
+  background-image: linear-gradient(to bottom, #47dca8, #3feb78);
+  text-decoration: none;
+  cursor:pointer;
+
+}
+
+.table.fim-de-jogo{
+    opacity: 0.8;
+    color:red;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem;
+}
+
+.bttn-play-again {
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  background: #fa69b6;
+  padding: 8px 7px 8px 10px;
+  margin-bottom: 0.6rem;
+
+}
+
+.bttn-play-again:hover{
+  background: #f0c8e0;
+  background-image: linear-gradient(to bottom, #47dca8, #3feb78);
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.text-winner{
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(2, 17, 16);
+}
+
+
+@media all and (max-width: 800px){
+
+    .content > h1{
+        font-size: 1.4rem;
+    }
+
+    .table{
+        height: 50vh;
+        width: 80vw;
+    }
+
+}
+
